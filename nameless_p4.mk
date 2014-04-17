@@ -7,6 +7,14 @@ $(call inherit-product, vendor/nameless/config/apns.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Get all fonts and add some locales
+$(call inherit-product-if-exists, frameworks/base/data/fonts/fonts.mk)
+$(call inherit-product-if-exists, external/noto-fonts/fonts.mk)
+$(call inherit-product-if-exists, external/naver-fonts/fonts.mk)
+$(call inherit-product-if-exists, external/sil-fonts/fonts.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+PRODUCT_LOCALES += tl_PH en_PH en_JP
+
 # Inherit some common nameless stuff.
 $(call inherit-product, vendor/nameless/config/common.mk)
 

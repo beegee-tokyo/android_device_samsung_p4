@@ -30,11 +30,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-P7500 BUILD_FINGERPRINT=samsung/
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME := p4
-# Don't forget to update the version number!
-ROM_VERSION = 1
-ROM_MOD = 05
-ROMSTAT_VER = V$(ROM_VERSION).$(ROM_MOD)
-GOO_VER = $(ROM_VERSION)$(ROM_MOD)
+
+$(call inherit-product, device/samsung/p4-common/version.mk)
 
 # BeeGee properties
 PRODUCT_PROPERTY_OVERRIDES += \

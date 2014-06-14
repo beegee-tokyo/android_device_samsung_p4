@@ -1,0 +1,26 @@
+[
+  {
+    "remote": "nameless",
+    "repository": "android_device_samsung_p4-common",
+    "target_path": "device/samsung/p4-common",
+    "revision": "android-4.4"
+  },
+  {
+    "remote": "nameless",
+    "repository": "android_kernel_samsung_p4",
+    "target_path": "kernel/samsung/p4",
+    "revision": "android-4.4"
+  },
+  {
+    "remote": "nameless",
+    "repository": "CrazyWeasel/proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
+    "revision": "android-4.4"
+  },
+  {
+    "remote": "github",
+    "repository": "beegee-tokyo/rom_stats",
+    "target_path": "packages/apps/rom_stats",
+    "revision": "master"
+  }
+]

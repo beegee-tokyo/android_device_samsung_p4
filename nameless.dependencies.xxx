@@ -16,11 +16,5 @@
     "repository": "CrazyWeasel/proprietary_vendor_samsung",
     "target_path": "vendor/samsung",
     "revision": "android-4.4"
-  },
-  {
-    "remote": "github",
-    "repository": "beegee-tokyo/rom_stats",
-    "target_path": "packages/apps/rom_stats",
-    "revision": "master"
   }
 ]

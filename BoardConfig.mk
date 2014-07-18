@@ -25,9 +25,22 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 710934528
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 14200340480
 
+#################
 # Try to build the kernel
+#################
 TARGET_KERNEL_SOURCE := kernel/samsung/p4
 TARGET_KERNEL_CONFIG := cyanogenmod_samsung_p4-jb_defconfig
+# Kernel Toolchain
+TARGET_KERNEL_CUSTOM_TOOLCHAIN=arm-eabi-4.6 
+#################
 # Keep this as a fallback
-TARGET_PREBUILT_KERNEL := device/samsung/p4/kernel
+#################
+#TARGET_PREBUILT_KERNEL := device/samsung/p4/kernel
+#ifeq ($(TARGET_PREBUILT_KERNEL),)
+#   LOCAL_KERNEL := $(LOCAL_PATH)/kernel
+#else
+#   LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+#endif
+#PRODUCT_COPY_FILES += \
+#   $(LOCAL_KERNEL):kernel
 

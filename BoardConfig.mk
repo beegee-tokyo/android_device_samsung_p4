@@ -31,7 +31,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 14200340480
 TARGET_KERNEL_SOURCE := kernel/samsung/p4
 TARGET_KERNEL_CONFIG := cyanogenmod_samsung_p4-jb_defconfig
 # Kernel Toolchain
-TARGET_KERNEL_CUSTOM_TOOLCHAIN=arm-eabi-4.6 
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 #################
 # Keep this as a fallback
 #################
